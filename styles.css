@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+/* Variables */
+:root {
+    --white: rgb(255, 255, 255, 0.7);
+    --gray: gray;
+    --perry: #006959;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 33rem 1fr;
+    height: 100vh;
+    /* border: black 3px solid; */
+}
+
+.background-video {
+    position: fixed;
+    bottom: -4rem;
+    left: -7rem;
+    width: 109vw;
+    z-index: -1;
+}
+
+input {
+    border: 1.5px var(--gray) solid;
+    outline: none;
+    width: 80%;
+    border-radius: 15px;
+    padding: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* For all containers ------------------------------ */
+.create-countdown-container,
+.counter-container,
+.countdown-completed-container {
+    /* As a grid child */
+    justify-self: center;
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    /* As a flex container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 40rem;
+    height: 25rem;
+    background-color: var(--white);
+    border-radius: 20px;
+
+    /* border: 3px black solid; */
+}
+.create-countdown-container .title-page {
+    font-family: 'Salsa', cursive;
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+/* For al titles ----------------------------------- */
+.create-countdown-container .title,
+.create-countdown-container .date,
+.create-countdown-container .reason-for-counting,
+.create-countdown-container .clock {
+    font-family: 'Salsa', cursive;
+    font-size: 1.1rem;
+    margin: 0;
+    margin-top: 1.3rem;
+    padding-left: 4rem;
+    padding-bottom: 0.4rem;
+    align-self: flex-start;
+}
+
+/* For all buttons --------------------------------- */
+.create-countdown-container .submit-button, 
+.counter-container .rest-button,
+.countdown-completed-container .new-countdown-button {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 15px;
+    margin-top: 1.3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 1.5px var(--gray) solid;
+    background-color: var(--perry);
+    color: white;
+}
+
+
+/* PART OF SECTION TWO */
+.counter-container .clock {
+    display: flex;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.counter-container .reason-for-counting {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.days h1,
+.hours h1,
+.minutes h1,
+.seconds h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+.days p,
+.hours p,
+.minutes p,
+.seconds p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+/* PART OF SECTION TWO */
+.countdown-completed-container .animation-countdown {
+    font-size: 3rem;
+    margin: 0;
+}
+.countdown-completed-container .results {
+    font-size: 2rem;
+}
+
+
+
+/* RENDER DIV */
+#render-sections {
+    /* As a grid child */
+    justify-self: center;
+    align-self: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
