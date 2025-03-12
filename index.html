@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown</title>
-    <link rel="stylesheet" href="/9°Countdown/styles.css">
-    <script src="/9°Countdown/script.js" defer></script>
-</head>
-<body>
-    <video autoplay muted loop class="background-video" src="/9°Countdown/backgroundVideo/Highland Cows - 65903.mp4"></video>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <video
+      autoplay
+      muted
+      loop
+      class="background-video"
+      src="https://res.cloudinary.com/dftslwu7s/video/upload/v1741816838/Highland_Cows_-_65903_upxban.mp4"
+    ></video>
     <div id="render-sections"></div>
     <template id="counter-creation">
-        <section class="create-countdown-container">
-            <h1 class="title-page">Create a Custom Countdown</h1>
-            <p class="title">Title</p>
-            <input id="count-reason" type="text" placeholder="What are you counting down to?" autocomplete="off">
-            <p class="date">Select a Date</p>
-            <input id="count-date" type="date">
-            <button class="submit-button">SUBMIT</button>
-        </section>
+      <section class="create-countdown-container">
+        <h1 class="title-page">Create a Custom Countdown</h1>
+        <p class="title">Title</p>
+        <input
+          id="count-reason"
+          type="text"
+          placeholder="What are you counting down to?"
+          autocomplete="off"
+        />
+        <p class="date">Select a Date</p>
+        <input id="count-date" type="date" />
+        <button class="submit-button">SUBMIT</button>
+      </section>
     </template>
     <template id="counter">
-        <section class="counter-container">
-            <h1 class="reason-for-counting">
-                Lo que sea
-            </h1>
-            <div class="clock">
-                <div class="days">
-                    <h1 class="number">00</h1>
-                    <p class="text">DAYS</p>
-                </div>
-                <div class="hours">
-                    <h1 class="number">00</h1>
-                    <p class="text">HOURS</p>
-                </div>
-                <div class="minutes">
-                    <h1 class="number">00</h1>
-                    <p class="text">MINUTES</p>
-                </div>
-                <div class="seconds">
-                    <h1 class="number">00</h1>
-                    <p class="text">SECONDS</p>
-                </div>
-            </div>
-            <button class="rest-button">REST</button>
-        </section>
+      <section class="counter-container">
+        <h1 class="reason-for-counting">Lo que sea</h1>
+        <div class="clock">
+          <div class="days">
+            <h1 class="number">00</h1>
+            <p class="text">DAYS</p>
+          </div>
+          <div class="hours">
+            <h1 class="number">00</h1>
+            <p class="text">HOURS</p>
+          </div>
+          <div class="minutes">
+            <h1 class="number">00</h1>
+            <p class="text">MINUTES</p>
+          </div>
+          <div class="seconds">
+            <h1 class="number">00</h1>
+            <p class="text">SECONDS</p>
+          </div>
+        </div>
+        <button class="rest-button">REST</button>
+      </section>
     </template>
     <template id="countdown-completed">
-        <section class="countdown-completed-container">
-            <h1 class="animation-countdown">
-                Countdown Complete!
-            </h1>
-            <p class="results">
-                finished on
-            </p>
-            <button class="new-countdown-button">NEW COUNTDOWN</button>
-        </section>
+      <section class="countdown-completed-container">
+        <h1 class="animation-countdown">Countdown Complete!</h1>
+        <p class="results">finished on</p>
+        <button class="new-countdown-button">NEW COUNTDOWN</button>
+      </section>
     </template>
-</body>
+  </body>
 </html>
